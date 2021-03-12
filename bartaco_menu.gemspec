@@ -9,19 +9,19 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'danny galimi'"]
   spec.email         = ["'dannygalimi13@aim.com'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "www.bartaco.com"
+  spec.summary       = %q{aeiou}
+  spec.description   = %q{aeiou}
+  spec.homepage      = "http://www.bartaco.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "www.bartaco.com"
+    spec.metadata["allowed_push_host"] = "http://www.bartaco.com"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "www.bartaco.com"
-    spec.metadata["changelog_uri"] = "www.bartaco.com"
+    spec.metadata["source_code_uri"] = "http://www.bartaco.com"
+    spec.metadata["changelog_uri"] = "http://www.bartaco.com"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -38,4 +38,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry"
+  spec.add_dependency "nokogiri"
 end
