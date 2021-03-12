@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/bartaco_menu
+require_relative '../lib/bartaco_menu'
 
 BartacoMenu::CLI.new.call
