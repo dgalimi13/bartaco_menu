@@ -32,7 +32,7 @@ class BartacoMenu::CLI
 
     def show_events_for(chosen_item)
         item = @items[chosen_item - 1]
-        puts "Here are the ingredients for #{item}"
+        puts "Here are the ingredients for #{item.name}"
         
         #BartacoMenu::Item.all.each.with.index do |item|
             #puts item.name
