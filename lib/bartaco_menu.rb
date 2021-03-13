@@ -1,5 +1,6 @@
 require_relative "./bartaco_menu/version"
 require_relative "bartaco_menu/cli"
+require_relative "./bartaco_menu/item"
 
 require 'pry'
 

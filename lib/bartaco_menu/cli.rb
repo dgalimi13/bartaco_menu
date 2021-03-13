@@ -7,8 +7,11 @@ class BartacoMenu::CLI
     end 
 
     def get_menu_items
-        # to be scrapped instead
-        @items = ['duck', 'chicken', 'chorizo', 'falafel']
+        BartacoMenu::Item.new("baja")
+        BartacoMenu::Item.new("chicken")
+        @items = BartacoMenu::Item.all
+        binding.pry
+        
     end
 
     def list_items
