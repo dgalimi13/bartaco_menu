@@ -5,6 +5,7 @@ require_relative "./bartaco_menu/scrapper"
 
 require 'pry'
 require 'nokogiri'
+require 'open-uri'
 
 module BartacoMenu
   class Error < StandardError; end

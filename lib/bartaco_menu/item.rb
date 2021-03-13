@@ -8,7 +8,8 @@ class BartacoMenu::Item
    save
     end
 
-    def self.all 
+    def self.all
+        BartacoMenu::Scraper.scrape_items if @@all.empty?
     @@all
     end
 

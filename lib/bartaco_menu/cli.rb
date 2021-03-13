@@ -7,8 +7,7 @@ class BartacoMenu::CLI
     end 
 
     def get_menu_items
-        BartacoMenu::Item.new("baja")
-        BartacoMenu::Item.new("chicken")
+        
         @items = BartacoMenu::Item.all
         
         
