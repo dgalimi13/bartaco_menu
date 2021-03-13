@@ -1,12 +1,11 @@
 class BartacoMenu::Item
-    attr_accessor :name 
-    attr_writer :ingredients
+    attr_accessor :name, :ingredients
     @@all = []
 
     def initialize(name)
     @name = name 
     @ingredients = []
-   save
+    save
     end
 
     def self.all
@@ -15,8 +14,7 @@ class BartacoMenu::Item
     end
 
     def ingredients
-        binding.pry
-        BartacoMenu::Scraper.scrape_ingredients if @@all.empty?
+        BartacoMenu::Scraper.scrape_ingredients(self) if @ingredients.empty?
         @ingredients
     end
 
