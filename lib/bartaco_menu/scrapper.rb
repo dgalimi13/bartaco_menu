@@ -1,0 +1,3 @@
+class BartacoMenu::scrapper
+
+end 

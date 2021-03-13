@@ -10,14 +10,14 @@ class BartacoMenu::CLI
         BartacoMenu::Item.new("baja")
         BartacoMenu::Item.new("chicken")
         @items = BartacoMenu::Item.all
-        binding.pry
+        
         
     end
 
     def list_items
         puts 'Choose a taco to see its ingredients'
         @items.each_with_index do  |item, index|
-          puts "#{index+1}. #{item}"
+          puts "#{index+1}. #{item.name}"
         end
     end
 
