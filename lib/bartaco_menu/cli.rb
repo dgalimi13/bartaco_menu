@@ -27,18 +27,12 @@ class BartacoMenu::CLI
 
     def valid_input(input, data)
         input.to_i <= data.length && input.to_i > 0
-        
     end
 
     def show_events_for(chosen_item)
         item = @items[chosen_item - 1]
+        ingredients = item.ingredients 
         puts "Here are the ingredients for #{item.name}"
-        
-        #BartacoMenu::Item.all.each.with.index do |item|
-            #puts item.name
-        #end
-        #get_user_item
-        
     end
 
 end  
