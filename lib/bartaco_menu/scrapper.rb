@@ -7,13 +7,29 @@ class BartacoMenu::Scraper
       tacos.each do |t|
         name = t.text
         BartacoMenu::Item.new(name)
-        #binding.pry
+        
       end 
     end
 
     def self.scrape_ingredients(item)
-      BartacoMenu::Ingredient.new("baja fish", item)
-      BartacoMenu::Ingredient.new("pork belly", item)
-    end 
+      doc = Nokogiri::HTML(open("https://bartaco.com/location/port-chester/"))
+      
+      ingredients = doc.css("div#tacos p")
+      shift = ingredients.shift
+      pop = ingredients.pop 
+      pop2 = ingredients.pop
+      pop3 = ingredients.pop
+
+      ingredients.each do |t|
+        name = t.text
+        BartacoMenu::Ingredient.new(name,item)
+      end 
+      
+      
+      
+      
+     
+      end
+    
 
 end  

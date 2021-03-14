@@ -1,10 +1,16 @@
 class BartacoMenu::CLI
     def call
         puts "Welcome to Bartaco"
+        # @input = ""
+        # until @input == "exit"
         get_menu_items
         list_items
         get_user_item
-    end 
+        # repeat
+        # end 
+        # goodbye
+    end
+     
 
     def get_menu_items
         @items = BartacoMenu::Item.all
@@ -30,7 +36,20 @@ class BartacoMenu::CLI
         item = @items[chosen_item - 1]
         item.get_ingredients 
         puts "Here are the ingredients for #{item.name}"
-        binding.pry
+        item.ingredients.each_with_index do |ingredient, index|
+        
+        puts "#{index+1}. #{ingredient.name}"
+         end
+        #get_user_event(item)
     end
+
+    # def repeat
+    #     puts "When you are done type 'exit' to exit or select another taco"
+    #     @input = gets.strip
+    #   end 
+      
+    #   def goodbye
+    #     puts "Enjoy Eden!"
+    #   end 
 
 end  
