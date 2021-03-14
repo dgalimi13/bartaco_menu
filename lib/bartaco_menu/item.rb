@@ -14,6 +14,7 @@ class BartacoMenu::Item
     end
 
     def ingredients
+        
         BartacoMenu::Scraper.scrape_ingredients(self) if @ingredients.empty?
         @ingredients
     end

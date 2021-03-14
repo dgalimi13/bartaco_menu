@@ -11,4 +11,8 @@ class BartacoMenu::Scraper
       end 
     end
 
+    def self.scrape_ingredients(item)
+
+    end 
+
 end  

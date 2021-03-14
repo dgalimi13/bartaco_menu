@@ -7,10 +7,7 @@ class BartacoMenu::CLI
     end 
 
     def get_menu_items
-        
         @items = BartacoMenu::Item.all
-        
-        
     end
 
     def list_items
@@ -22,17 +19,17 @@ class BartacoMenu::CLI
 
     def get_user_item
         chosen_item = gets.strip.to_i
-        show_events_for(chosen_item) if valid_input(chosen_item, @items)
+        show_ingredients_for(chosen_item) if valid_input(chosen_item, @items)
     end
 
     def valid_input(input, data)
         input.to_i <= data.length && input.to_i > 0
     end
 
-    def show_events_for(chosen_item)
+    def show_ingredients_for(chosen_item)
         item = @items[chosen_item - 1]
-        BartacoMenu::Item.new("baja fish", item)
-        BartacoMenu::Item.new("pork belly", item)
+        BartacoMenu::Ingredient.new("baja fish", item)
+        BartacoMenu::Ingredient.new("pork belly", item)
         ingredients = item.ingredients 
         puts "Here are the ingredients for #{item.name}"
         binding.pry

@@ -2,7 +2,7 @@ class BartacoMenu::Event
     attr_accessor :name, :item 
     @@all = []
 
-    def initialize(name)
+    def initialize(name, item)
         @name = name 
         @item = item
         save
@@ -11,7 +11,5 @@ class BartacoMenu::Event
     def save
         @@all << self
     end 
-
-    
 
 end
