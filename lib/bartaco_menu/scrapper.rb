@@ -12,7 +12,8 @@ class BartacoMenu::Scraper
     end
 
     def self.scrape_ingredients(item)
-
+      BartacoMenu::Ingredient.new("baja fish", item)
+      BartacoMenu::Ingredient.new("pork belly", item)
     end 
 
 end  

@@ -13,16 +13,12 @@ class BartacoMenu::Item
         @@all
     end
 
-    def ingredients
-        
+    def get_ingredients
         BartacoMenu::Scraper.scrape_ingredients(self) if @ingredients.empty?
-        @ingredients
     end
 
     def save
     @@all << self
     end 
-
-    
 
 end

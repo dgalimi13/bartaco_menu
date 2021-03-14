@@ -28,9 +28,7 @@ class BartacoMenu::CLI
 
     def show_ingredients_for(chosen_item)
         item = @items[chosen_item - 1]
-        BartacoMenu::Ingredient.new("baja fish", item)
-        BartacoMenu::Ingredient.new("pork belly", item)
-        ingredients = item.ingredients 
+        item.get_ingredients 
         puts "Here are the ingredients for #{item.name}"
         binding.pry
     end
