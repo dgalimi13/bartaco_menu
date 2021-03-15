@@ -1,14 +1,14 @@
 class BartacoMenu::CLI
     def call
         puts "Welcome to Bartaco"
-        # @input = ""
-        # until @input == "exit"
+         @input = ""
+         until @input == "exit"
         get_menu_items
         list_items
         get_user_item
-        # repeat
-        # end 
-        # goodbye
+         repeat
+         end 
+         goodbye
     end
      
 
@@ -40,16 +40,17 @@ class BartacoMenu::CLI
         
         puts "#{index+1}. #{ingredient.name}"
          end
-        #get_user_event(item)
+         puts "hit enter to continue"
+        get_user_item
     end
 
-    # def repeat
-    #     puts "When you are done type 'exit' to exit or select another taco"
-    #     @input = gets.strip
-    #   end 
+     def repeat
+         puts "if you are finished type 'exit' to exit or enter to see our tacos again"
+         @input = gets.strip
+       end 
       
-    #   def goodbye
-    #     puts "Enjoy Eden!"
-    #   end 
+       def goodbye
+         puts "Thank you goodbye"
+       end 
 
 end  
