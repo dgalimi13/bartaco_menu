@@ -1,10 +1,7 @@
 # BartacoMenu
 
-Find out ingredients on bartaco menu ITEMS
+This gem is designed to inform the user about the ingredients/information about a chosen taco from the Bartaco Menu
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bartaco_menu`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -24,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+upon opening the program will greet the user and display the tacos in an ordered list. the user will also be prompted to make a selection of taco by number(1-12). The selected taco's information/ingredients will be displayed to the user along with a prompt to hit enter to continue. the program will instruct the user to exit if they are done or hit enter again to re-disply the taco menu and make another input. this process will repeat until the user types exit when prompted to exit the program
 
 ## Development
 
