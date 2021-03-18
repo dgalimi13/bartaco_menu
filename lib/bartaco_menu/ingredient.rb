@@ -21,5 +21,4 @@ class BartacoMenu::Ingredient
         @@all << self
     end 
 
-
 end

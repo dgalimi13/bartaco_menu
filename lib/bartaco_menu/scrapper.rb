@@ -22,6 +22,7 @@ class BartacoMenu::Scraper
 
       ingredients.each do |t|
         name = t.text
+        
         BartacoMenu::Ingredient.new(name,item)
       end 
       

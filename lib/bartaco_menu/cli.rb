@@ -1,14 +1,14 @@
 class BartacoMenu::CLI
     def call
         puts "Welcome to Bartaco"
-         @input = ""
+        @input = ""
          until @input == "exit"
-        get_menu_items
-        list_items
-        get_user_item
+         get_menu_items
+         list_items
+         get_user_item
          repeat
          end 
-         goodbye
+        goodbye
     end
      
 
@@ -36,11 +36,8 @@ class BartacoMenu::CLI
         item = @items[chosen_item - 1]
         item.get_ingredients 
         puts "Here are the ingredients for #{item.name}"
-        item.ingredients.each_with_index do |ingredient, index|
-        
-        puts "#{index+1}. #{ingredient.name}"
-         end
-         puts "hit enter to continue"
+        puts item.ingredients[chosen_item - 1].name
+        puts "hit enter to continue"
         get_user_item
     end
 
