@@ -21,4 +21,8 @@ class BartacoMenu::Ingredient
         @@all << self
     end 
 
+    def destroy
+
+    end 
+
 end

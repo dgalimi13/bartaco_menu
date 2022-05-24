@@ -18,7 +18,8 @@ class BartacoMenu::CLI
 
     def list_items
         puts 'Choose a taco to see its ingredients'
-        @items.each_with_index do  |item, index|
+        sorted = @items.sort { |a, b| a.name <=> b.name }
+        sorted.each_with_index do  |item, index|
           puts "#{index+1}. #{item.name}"
         end
     end
