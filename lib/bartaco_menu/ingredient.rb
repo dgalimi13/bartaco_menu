@@ -25,4 +25,8 @@ class BartacoMenu::Ingredient
 
     end 
 
+    def add_price_to_ingrediant(ingrediant)
+
+    end 
+
 end
