@@ -29,4 +29,8 @@ class BartacoMenu::Ingredient
 
     end 
 
+    remove_price_from_ingrediant
+
+    end 
+
 end
