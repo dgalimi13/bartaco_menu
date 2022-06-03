@@ -33,4 +33,8 @@ class BartacoMenu::Ingredient
 
     end 
 
+    def add_allergie_to_menu
+
+    end 
+
 end
