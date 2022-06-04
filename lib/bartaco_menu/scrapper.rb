@@ -25,6 +25,10 @@ class BartacoMenu::Scraper
         
         BartacoMenu::Ingredient.new(name,item)
       end 
+
+      def self.scrape_allergies
+
+      end 
       
       
       
