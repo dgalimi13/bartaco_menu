@@ -15,6 +15,10 @@ class Allergy
         
     end
 
+    def scrap_allergies
+
+    end 
+
     
 
 end 
