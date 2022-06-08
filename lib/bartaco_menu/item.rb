@@ -23,4 +23,8 @@ class BartacoMenu::Item
     @@all << self
     end 
 
+    def get_allergies
+
+    end 
+
 end
