@@ -15,8 +15,8 @@ class Allergy
         
     end
 
-    def scrap_allergies
-
+    def self.scrap_allergies
+        BartacoMenu::Scraper.scrape_allergies
     end 
 
     
