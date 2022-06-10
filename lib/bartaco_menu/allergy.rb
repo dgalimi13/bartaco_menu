@@ -19,6 +19,10 @@ class Allergy
         BartacoMenu::Scraper.scrape_allergies
     end 
 
+    def save
+        @@all << self
+    end 
+
     
 
 end 
